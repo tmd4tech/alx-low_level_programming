@@ -1,27 +1,39 @@
-#include "holberton.h"
+#include "main.h"
+
+#include <stdio.h>
+
+
 
 /**
  *
- *  * swap_int - swaps the values of two integers
+ *  * main - check the code
  *
- *   * @a: integer 1
+ *   *
  *
- *    * @b: integer 2
+ *    * Return: Always 0.
  *
- *     *
- *
- *      **/
+ *     */
 
-void swap_int(int *a, int *b)
+int main(void)
 
 {
 
-		int c = *a;
+	    int a;
+
+	        int b;
 
 
 
-			*a = *b;
+		    a = 98;
 
-				*b = c;
+		        b = 42;
+
+			    printf("a=%d, b=%d\n", a, b);
+
+			        swap_int(&a, &b);
+
+				    printf("a=%d, b=%d\n", a, b);
+
+				        return (0);
 
 }
